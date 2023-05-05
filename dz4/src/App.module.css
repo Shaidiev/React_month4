@@ -1,0 +1,19 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.selectStyle {
+  text-align: center;
+  width: 90px;
+}
+
+.searchStyle {
+  height: 30px;
+  width: 40vh;
+  border-radius: 7px;
+}

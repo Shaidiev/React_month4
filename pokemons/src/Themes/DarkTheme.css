@@ -1,0 +1,9 @@
+.App.dark {
+    --background-color: #000;
+    --text-color: #fff;
+    --card-background: rgb(242, 247, 242);
+    --border: 3px solid tomato;
+    /* --background: #efc81d; */
+    --background: #000;
+    --color: #fff;
+}

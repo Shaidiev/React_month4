@@ -1,0 +1,32 @@
+.card {
+  /* border: 1px solid black; */
+  border-radius: 8px;
+  background: lightgray;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+}
+
+.cardContent {
+  margin-top: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+}
+
+.cardText {
+  margin-top: 1rem;
+}
+
+.cardButton {
+  display: block;
+  margin-top: 1rem;
+  background: rgb(43, 43, 133);
+  color: aliceblue;
+  border-radius: 8px;
+}

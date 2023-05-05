@@ -1,0 +1,11 @@
+.footer {
+  background: rgb(63, 81, 245);
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+}
+.footer :hover {
+  color: black;
+}

@@ -1,0 +1,45 @@
+.cards{
+    width: 250px;
+    height: 350px;
+    border: none;
+    border-radius: 8px;
+    background: var(--card-background);
+    margin-bottom: 10px;
+    text-align: center;
+    border: var(--border);
+  
+    
+}
+
+.img{
+    width: 150px;
+    margin-top: 70px;
+    position: relative;
+    animation: move 1s infinite alternate ease-in-out;
+}
+
+.name{
+    font-size: 20px;
+    /* padding-top: 20px;  */
+}
+
+.description{
+    background: var(--background);
+    margin-top: 18.5%;
+    height: 76px;
+    border-radius: 0px 0px 8px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color);
+    border-top: var(--border);
+}
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 10px;
+    }
+}

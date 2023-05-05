@@ -1,0 +1,36 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.selectStyle {
+  width: 130px;
+  display: flex;
+  height: 30px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 5px;
+  border: 2px solid lightseagreen;
+  outline: none;
+}
+
+.searchStyle {
+  height: 30px;
+  width: 40vh;
+  border-radius: 8px;
+  border: 2px solid lightseagreen;
+  outline: lightseagreen;
+}
+.deleteAll {
+  width: 130px;
+  height: 30px;
+  border-radius: 8px;
+  margin-top: 5px;
+  outline: none;
+  border: 2px solid lightseagreen;
+  background-color: white;
+}
