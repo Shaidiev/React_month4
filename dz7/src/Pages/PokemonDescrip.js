@@ -1,18 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { fetchImage } from '../Components/API/Api';
+import axios from 'axios';
 
 function PokemonDescrip() {
   const { id } = useParams();
   const [pokemonData, setPokemonData] = useState(null);
 
   useEffect(() => {
-    fetchImage().then((data) => {
-      const pokemon = data.find(p => p.id.toString() === id);
-      if (pokemon) {
+    async function fetchData() {
+      try {
+        const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
+        const pokemon = {
+          id: response.data.id,
+          name: response.data.name,
+          image: response.data.sprites.other['official-artwork'].front_default,
+        };
         setPokemonData(pokemon);
+      } catch (error) {
+        console.error(error);
       }
-    });
+    }
+
+    fetchData();
   }, [id]);
 
   return (

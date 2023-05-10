@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './Cards.module.css';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 function Cards({ pokemon }) {
   return (
