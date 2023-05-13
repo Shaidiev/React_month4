@@ -14,18 +14,8 @@ const MainPage = () => {
   const [ count, setCount ] = useState(1);
   const [ page, setPage ] = useState(1);
   const [ offset, setOffset ] = useState(1);
-
-
-
   const limit = 10;
 
-
-//   useEffect(() => {
-//         fetchPokemons().then((data) => {
-//           console.log(data)
-//             setPokemonCards([...data.results])
-//         })
-//   }, [])
 
   useEffect(() => {
     fetchImage({ limit, offset }).then((data) => {
@@ -34,14 +24,6 @@ const MainPage = () => {
       setCount(pageCount)
     })
   }, [ offset ])
-
-//   useEffect(() => {
-//     fetchPokemons({ limit, offset}).then((data) => {
-//       setPokemonCards([...data.results])
-//       const pageCount = Math.ceil(data.count / limit)
-//       setCount(pageCount)
-//     })
-//   }, [ offset ])
 
 
 const handleNext = () => {

@@ -5,6 +5,8 @@ import { useState } from 'react';
 import ControlledSwitches from './UI/Switch/ControlledSwitches';
 import './App.css';
 import PokemonDescrip from './Pages/PokemonDescrip';
+import AboutPage from './Pages/AboutPage';
+import { HomeOutlined } from '@mui/icons-material';
 
 function App() {
 
@@ -22,7 +24,11 @@ function App() {
     <BrowserRouter>
 
       <div className={`App ${theme}`}>
-        <Link to='/' className='mainPage'>
+        <Link to='/' className='homeIcon'>
+          <HomeOutlined />
+          Home
+        </Link>
+        <Link to='/mainPage' className='mainPage'>
           POKEMONS
         </Link>
         <ControlledSwitches
@@ -30,8 +36,9 @@ function App() {
             changeAppTheme()
           }} />
         <Routes>
-          <Route path="/" element={<MainPage />} />
+          <Route path="/mainPage" element={<MainPage />} />
           <Route path="/pokemon/:id" element={<PokemonDescrip />} />
+          <Route path="/" element={<AboutPage />} />
         </Routes>
       </div>
     </BrowserRouter>
